@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Life - Ariana Laguna-Garcia</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f2f2f2;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            background-color: #fff;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-family: 'Playfair Display', Georgia, serif;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        nav a:hover::after,
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            bottom: 0;
+            left: 0;
+        }
+        
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 60px 0 30px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .page-header h1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        /* Personal Content */
+        .personal-content {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+        
+        .personal-text {
+            margin-bottom: 40px;
+        }
+        
+        .personal-text p {
+            margin-bottom: 15px;
+        }
+        
+        /* Hobbies Section */
+        .hobbies {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .hobby {
+            width: 150px;
+            text-align: center;
+        }
+        
+        .hobby-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #dbe3d2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hobby h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .personal-content {
+                padding: 30px;
+            }
+            
+            .hobbies {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professional.html">Professional Persona</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="personal.html" class="active">Personal Life</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Personal Life</h1>
+        </div>
+    </header>
+    
+    <!-- Personal Content -->
+    <section class="container">
+        <div class="personal-content">
+            <div class="personal-text">
+                <p>Beyond my professional pursuits, I maintain a diverse set of interests that keep me balanced and inspired. I believe that personal growth and professional development go hand in hand, each informing and enriching the other.</p>
+                
+                <p>Growing up in a multicultural family, I developed a deep appreciation for different perspectives and traditions. This background has shaped my approach to both life and work, instilling values of empathy, adaptability, and open-mindedness that I carry with me every day.</p>
+            </div>
+            
+            <h2 style="text-align: center; margin-bottom: 30px;">Hobbies & Interests</h2>
+            
+            <div class="hobbies">
+                <div class="hobby">
+                    <div class="hobby-icon">🌱</div>
+                    <h3>Gardening</h3>
+                    <p>Nurturing plants and creating green spaces</p>
+                </div>
+                
+                <div class="hobby">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Reading</h3>
+                    <p>Exploring new worlds through literature</p>
+                </div>
+                
+                <div class="hobby">
+                    <div class="hobby-icon">✈️</div>
+                    <h3>Travel</h3>
+                    <p>Experiencing diverse cultures and places</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

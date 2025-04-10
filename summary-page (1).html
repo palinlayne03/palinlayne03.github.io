@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Ariana Laguna-Garcia</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            background-color: #fff;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-family: 'Playfair Display', Georgia, serif;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        nav a:hover::after,
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            bottom: 0;
+            left: 0;
+        }
+        
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 60px 0 30px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .page-header h1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 50px 0;
+        }
+        
+        .section-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: justify;
+        }
+        
+        .section-inner p {
+            margin-bottom: 20px;
+        }
+        
+        .section-inner h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        /* Highlighted Quote */
+        .quote-section {
+            padding: 30px 0;
+            background-color: #dde4da;
+            margin: 40px 0;
+        }
+        
+        .quote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        /* Graph */
+        .graph-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .graph-caption {
+            font-style: italic;
+            max-width: 600px;
+            margin: 15px auto 0;
+        }
+        
+        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .section-inner {
+                padding: 25px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professional.html">Professional Persona</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="personal.html">Personal Life</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Summary</h1>
+        </div>
+    </header>
+    
+    <!-- Summary Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-inner">
+                <p>My professional persona is built upon core values of empathy, honesty, and responsibility. Throughout my academic and professional journey, I have consistently sought feedback and engaged in self-reflection to identify areas of strength and opportunities for growth.</p>
+                
+                <p>In my leadership roles within clubs and organizations, I have applied these values by fostering inclusive environments where all members feel valued and motivated to contribute. Survey results from peers and mentors have consistently highlighted my ability to balance assertiveness with collaboration, creating paths forward while maintaining strong interpersonal connections.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <p class="quote">"Overall a great teammate!"</p>
+        </div>
+    </section>
+    
+    <!-- Peer Feedback Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-inner">
+                <p>Peer responses have provided valuable insights into how others perceive my professional presence. Consistent themes include being described as responsible, empathetic, and dependable. These external perceptions align closely with the personal brand I aim to cultivate, which is centered around reliability and genuine care for collaborative success.</p>
+                
+                <p>This alignment between self-perception and external feedback confirms that my intentional approach to professional relationships is effectively communicated through my actions and communication style.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- People Styles Section -->
+    <section class="section" style="background-color: #dde4da; padding-top: 50px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-inner">
+                <h2>People Styles</h2>
+                
+                <p>My assessment results identify me as primarily a "Driver" style, characterized by high assertiveness combined with moderate responsiveness. This style manifests in my approach to academic projects and professional responsibilities, where I often take initiative in establishing clear objectives and timelines while remaining attentive to team dynamics.</p>
+                
+                <p>As a tour guide for prospective students, my Driver style enables me to confidently lead groups while adapting my presentation to audience needs. This balance of direction and flexibility has proven effective in various leadership contexts, from classroom project management to club event organization.</p>
+                
+                <div class="graph-container">
+                    <img src="/api/placeholder/500/300" alt="People Styles Graph">
+                    <p class="graph-caption">The graph illustrates my positioning on the assertiveness-responsiveness spectrum, showing my primary Driver style with secondary Expressive tendencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Buttons -->
+    <div class="container">
+        <div class="cta-buttons">
+            <a href="professional.html" class="cta-button">Professional Persona</a>
+            <a href="professional-path.html" class="cta-button">Shaping My Professional Path</a>
+        </div>
+    </div>
+</body>
+</html>
